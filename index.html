@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!--Bootstrap'tan alındı-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script src='addQuestion.js'></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Quiz App</a>
+            <a class="navbar-brand" href="index2.html">Add Question</a>
+        </nav>
+
+        <div class="row" id="questionrow" class="text-center">
+            <div class="col-lg">
+                <h1 class="text-center">Quiz App</h1>
+            </div>
+
+        </div>
+        <div class="row" >
+            <div class="col-md">
+                <p>Large textarea</p>
+                <textarea  class="form-control" id="questionArea" ></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <p>Answer1</p>
+                <input class="form-control" id="Answer1">
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-md">
+                <p>Answer2</p>
+                <input class="form-control" id="Answer2">
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-md">
+                <p>Answer</p>
+                <input class="form-control" id="Answer3">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Answer4</p>
+                <input class="form-control" id="Answer4">
+            </div>
+        </div>
+        </br></br>
+        <div class="row">
+            <div class="col-lg">
+                <select id="AnswersSelect">
+                    <option selected>Select True Answer</option>
+                </select>
+            </div>
+        </div>
+
+        </br></br>
+
+
+        <div class="row" id="rowbutton"id="Send">
+            <div class="col">
+
+                <button id="Send">Send Question</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
